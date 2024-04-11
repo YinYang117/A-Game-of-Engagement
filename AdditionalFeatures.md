@@ -18,6 +18,20 @@ Allow user to spend the rewards to unlock / buy stuff
     - Sell your units, upgrades, etc
     - Gain more / different units, upgrades, etc
 
+## Toggleable CSS
+
+Have CSS effects like:
+- Fireworks that spray from your mouse like a sparkler
+- Light mode
+- Dark mode
+- A really big or really small mouse cursor
+- Other cursor things
+- Animations within the game
+- Animations in the background
+- Different styles of game board
+- Maybe even a toggle from square to hex
+    - This would be a Lot of backend game logic
+
 ## A Blog
 
 A page on the site with posts from users.
