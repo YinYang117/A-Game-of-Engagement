@@ -23,6 +23,11 @@ The Game:
 - Has a hexagonal or square grid for units
 - Has click and click, or click and drag movement
     - Click and drag prefered
+- Needs to have at least 3 levels
+    - Intro engagement level
+    - Next gimme level 
+    - Level that actually requires player interaction to win
+- Each level will start very barebones
 
 Lots of room for additions to The Game after the MVP.
 
