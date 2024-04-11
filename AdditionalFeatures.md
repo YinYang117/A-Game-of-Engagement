@@ -1,6 +1,22 @@
 # Additional Features
 
-Here we'll list out everything that isn't part of the MVP, or the main objective of the site, but may still be an interesting addition
+Everything that isn't part of the MVP
+
+## The Game
+
+Add a variety of units into the game
+Add rewards for beating each level
+Allow user to spend the rewards to unlock / buy stuff
+
+## Shopping
+
+- Have a feature where the user can spend their gold from the game like shopping at amazon
+
+- Have a feature where the user can spend real money to buy in game money
+    - Don't actually take their money
+- Have a barter screen where you can "wheel and deal" with a shop
+    - Sell your units, upgrades, etc
+    - Gain more / different units, upgrades, etc
 
 ## A Blog
 
