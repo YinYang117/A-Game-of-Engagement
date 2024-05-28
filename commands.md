@@ -12,3 +12,6 @@ npm i -D sqlite3 dotenv-cli nodemon
 - `pg` - use Postgres as the production environment database
 
 
+*in backend*
+cp .env.example .env
+
