@@ -15,4 +15,6 @@ npm i -D sqlite3 dotenv-cli nodemon
 *in backend*
 cp .env.example .env
 
-Run `openssl rand -base64 10` to generate a random JWT secret.
+Run `openssl rand -base64 10` to generate a random JWT secret for the .env
+
+npx sequelize init
