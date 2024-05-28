@@ -17,8 +17,6 @@ app.use(morgan('dev'));
 app.use(cookieParser());
 app.use(express.json());
 
-app.use(routes); 
-
 
 // Security Middleware
 
@@ -36,5 +34,11 @@ app.use(csurf({
         httpOnly: true
     }
 }));
+
+
+// Routes
+
+app.use(routes); 
+
 
 module.exports = app;
