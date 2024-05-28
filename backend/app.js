@@ -5,6 +5,7 @@ const cors = require('cors');
 const csurf = require('csurf');
 const helmet = require('helmet');
 const cookieParser = require('cookie-parser');
+const routes = require('./routes');
 
 const { environment } = require('./config');
 const isProduction = environment === 'production';
@@ -13,5 +14,27 @@ const isProduction = environment === 'production';
 const app = express();
 
 app.use(morgan('dev'));
+app.use(cookieParser());
+app.use(express.json());
+
+app.use(routes); 
 
 
+// Security Middleware
+
+// Use cors in development
+if (!isProduction) app.use(cors());
+
+// helmet sets a variety of security headers
+app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
+
+// Set the _csrf token and create req.csrfToken method
+app.use(csurf({
+    cookie: {
+        secure: isProduction,
+        sameSite: isProduction && "Lax",
+        httpOnly: true
+    }
+}));
+
+module.exports = app;
