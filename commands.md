@@ -1,7 +1,8 @@
-npm i coookie-parser cors csurf dotenv express express-async-errors helmet jsonwebtoken morgan per-env sequelize sequelize-cli pg
+npm i cookie-parser cors csurf dotenv express express-async-errors helmet jsonwebtoken morgan per-env sequelize sequelize-cli pg
 
-npm install -D sqlite3 dotenv-cli nodemon
+npm i -D sqlite3 dotenv-cli nodemon
 
+`npm i -D` === npm i --save-dev and 
 
 - `csurf` - CSRF
 - `helmet` - security middleware
@@ -10,5 +11,4 @@ npm install -D sqlite3 dotenv-cli nodemon
 - `per-env` - use environment variables for starting app differently
 - `pg` - use Postgres as the production environment database
 
-`npm install -D` dev-dependencies:
 
