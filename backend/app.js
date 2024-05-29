@@ -38,7 +38,6 @@ app.use(csurf({
 
 // Routes
 
-app.use(routes); 
-
+app.use(routes);
 
 module.exports = app;
