@@ -1,5 +1,3 @@
-const e = require('express');
-
 const router = require('express').Router();
 
 // Add a XSRF-TOKEN cookie return in json
