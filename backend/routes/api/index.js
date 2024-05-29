@@ -1,7 +1,5 @@
 const router = require('express').Router();
 
-let User;
-
 // // Add a XSRF-TOKEN cookie return in json during development
 // // Currently no measures to stop it from working in production
 // router.get("/csrf/restore", (req, res) => {
