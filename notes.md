@@ -1,1 +1,2 @@
 Tried creating new user in ubuntu, adding to sudo wheel for privileges. Found out that switching users (su) to them means all my bash.rc commands are gone, files and folders are gone. So I'd need to find a way to move that all over to new user.
+now, Im in the auth branch. Next steps are to review what I was working on, and continue it, then merge to main.
