@@ -10,3 +10,5 @@ come to find out after a good chunk of reseach: my main goal was to make it so t
 so removing vscode from wsl, going back to root, I simply set my git config and boom, done.
 
 sheesh.
+
+confirmed on github that I YinYang117 authored and committed. Excellent
