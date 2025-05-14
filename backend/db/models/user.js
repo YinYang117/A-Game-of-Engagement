@@ -15,13 +15,14 @@ module.exports = (sequelize, DataTypes) => {
     id: {
       allowNull: false,
       type: DataTypes.INTEGER,
-      primaryKey: true
+      primaryKey: true,
+      autoIncrement: true
     },
     username: {
       type: DataTypes.STRING,
       unique: true,
       allowNull: false,
-      verify: {
+      validate: {
         len: [2,50],
         isNotEmail(val) {
           if (Validator.isEmail(val)) throw new Error("Username cannot be an email")
