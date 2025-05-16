@@ -37,6 +37,13 @@ A user can log in
 A user can log out
 A user can view all the pages of the site, and navigate between them with our UI
 
+## Security
+This site uses:
+JWT (JSON web tokens)
+CSRF (Cross site request forgery)
+npm helmet
+
+
 ## WireFrames
 
 ## Database Schema Design
