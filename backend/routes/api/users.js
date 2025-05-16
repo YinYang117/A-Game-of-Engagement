@@ -39,3 +39,48 @@ const validateSignup = [
     handleValidationErrors
 ];
 
+
+// Sign-up new User
+router.post('/', validateSignup, async (req, res) => {
+    const { username, email, password } = req.body;
+    const hashedPassword = bcrypt.hashSync(password);
+
+    const isExistingUser = await User.findOne({
+        where: {
+            [Op.or]: [{ email: email }, { username: username }],
+        },
+    })
+
+    if (isExistingUser) {
+        const isEmail = email === isExistingUser.email;
+        const isUsername = username === isExistingUser.username;
+        const errObj = { message: 'User already exists', errors: {}};
+
+        if (isUsername) errObj.errors.username = 'User with that username already exists';
+        if (isEmail) errObj.errors.email = 'User with that email already exists';
+        res.json(errObj);
+    }
+
+    const newUser = await User.create({
+        username, email, hashedPassword
+    })
+
+    const safeUser = {
+        id: newUser.id,
+        username: newUser.username,
+        email: newUser.email
+    }
+
+    setTokenCookie(res, safeUser)
+
+    res.json(safeUser)
+});
+
+
+// Get current user
+
+// Edit current user
+
+// Delete current user
+
+module.exports = router;
