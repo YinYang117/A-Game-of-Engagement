@@ -78,9 +78,19 @@ router.post('/', validateSignup, async (req, res) => {
 
 
 // Get current user
+router.get('/', async (req, res, next) => {
+
+})
 
 // Edit current user
+router.put('/', async (req, res, next) => {
+    
+})
 
 // Delete current user
+router.delete('/', async (req, res, next) => {
+    
+})
+
 
 module.exports = router;
