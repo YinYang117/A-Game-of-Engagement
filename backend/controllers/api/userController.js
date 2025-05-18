@@ -1,5 +1,13 @@
-const db = require('../../db/models');
-const { User } = db;
+const { User } =  require('../../db/models');
+const { Op } = require('sequelize');
+const bcrypt = require('bcrypt');
+/*
+    TODO:
+    do I need to import like this?
+    const db = require('../../db/models');
+    const { User } = db;
+*/
+
 
 // Create a new user
 const signup = async (req, res) => {
