@@ -29,3 +29,7 @@ npx dotenv sequelize db:seed
 npx dotenv sequelize db:seed:all
 npx dotenv sequelize db:seed:undo
 npx dotenv sequelize db:seed:undo:all
+
+npx sequelize db:drop --env development
+// db:drop is the specific command to drop (delete) the database.
+// --env development tells Sequelize CLI to use the database configuration specified for your development environment in backend/config/database.js file.
