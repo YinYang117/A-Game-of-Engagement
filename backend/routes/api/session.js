@@ -3,9 +3,8 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const { User } = require('../../db/models');
 const { Op } = require('sequelize');
-const { check } = require('express-validator');
 const { handleValidationErrors, validateLogin } = require('../utils/validation');
-const { setTokenCookie } = require('../utils/auth');
+// const { setTokenCookie } = require('../utils/auth');
 const { login, logout } = require('../../controllers/api/sessionController');
 
 

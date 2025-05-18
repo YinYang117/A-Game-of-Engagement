@@ -1,6 +1,6 @@
 const { User } =  require('../../db/models');
 const { Op } = require('sequelize');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const { setTokenCookie } = require('../../routes/utils/auth');
 /*
     TODO:
