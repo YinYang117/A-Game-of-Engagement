@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs');
 const { Op } = require('sequelize');
 const db = require('../../db/models');
 const { User } = db;
-const { setTokenCookie } = require('../utils/auth');
+const { setTokenCookie } = require('../../routes/utils/auth');
 
 
 const login = async (req, res, next) => {
