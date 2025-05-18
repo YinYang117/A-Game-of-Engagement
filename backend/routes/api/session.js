@@ -4,20 +4,10 @@ const bcrypt = require('bcryptjs');
 const { User } = require('../../db/models');
 const { Op } = require('sequelize');
 const { check } = require('express-validator');
-const { handleValidationErrors } = require('../utils/validation');
+const { handleValidationErrors, validateLogin } = require('../utils/validation');
 const { setTokenCookie } = require('../utils/auth');
 const { login, logout } = require('../../controllers/api/sessionController');
 
-const validateLogin = [
-    // Allow a user to provide email or username for login
-    check('credential')
-        .notEmpty()
-        .withMessage('Email or username is required'),
-    check('password')
-        .exists({ checkFalsy: true })
-        .withMessage('Password is required'),
-    handleValidationErrors
-];
 
 
 // Current User

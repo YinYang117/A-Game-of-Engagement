@@ -1,3 +1,9 @@
+const bcrypt = require('bcrypt');
+const { Op } = require('sequelize');
+const db = require('../../db/models');
+const { User } = db;
+const { setTokenCookie } = require('../utils/auth');
+
 
 const login = async (req, res, next) => {
     const { credential, password } = req.body;

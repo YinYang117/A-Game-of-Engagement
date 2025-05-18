@@ -1,6 +1,7 @@
 const { User } =  require('../../db/models');
 const { Op } = require('sequelize');
 const bcrypt = require('bcrypt');
+const { setTokenCookie } = require('../../routes/utils/auth');
 /*
     TODO:
     do I need to import like this?
@@ -31,7 +32,9 @@ const signup = async (req, res) => {
     }
 
     const newUser = await User.create({
-        username, email, hashedPassword
+        username,
+        email,
+        hashedPassword
     })
 
     const safeUser = {

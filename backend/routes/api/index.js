@@ -1,9 +1,10 @@
 const router = require('express').Router();
+const sessionRouter = require('./session');
+const usersRouter = require('./users');
 const { restoreUser } = require('../utilities/auth');
 
 router.use('/session', sessionRouter);
 router.use('/users', usersRouter);
-
 
 // If valid user in session:
 //  sets req.user to safeUser scope from db
