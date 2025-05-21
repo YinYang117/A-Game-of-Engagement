@@ -13,7 +13,7 @@ const { setTokenCookie } = require('../../routes/utils/auth');
 // Create a new user
 const signup = async (req, res) => {
     const { username, email, password } = req.body;
-    const hashedPassword = bcrypt.hashSync(password);
+    const passwordHash = bcrypt.hashSync(password);
 
     const isExistingUser = await User.findOne({
         where: {
@@ -34,7 +34,7 @@ const signup = async (req, res) => {
     const newUser = await User.create({
         username,
         email,
-        hashedPassword
+        passwordHash
     })
 
     const safeUser = {
