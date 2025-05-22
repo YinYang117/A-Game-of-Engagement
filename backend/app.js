@@ -7,11 +7,8 @@ const helmet = require('helmet');
 const cookieParser = require('cookie-parser');
 const { ValidationError } = require('sequelize');
 const routes = require('./routes');
-
 const { environment } = require('./config');
 const isProduction = environment === 'production';
-
-
 const app = express();
 
 app.use(morgan('dev'));
@@ -19,7 +16,9 @@ app.use(cookieParser());
 app.use(express.json());
 
 
-// Security Middleware
+/**
+    ****** Security Middleware ******
+**/
 
 // Use cors in development
 if (!isProduction) app.use(cors());
@@ -37,10 +36,11 @@ app.use(csurf({
 }));
 
 
-// Routes
+/**
+    ****** Routes ******
+**/
 
 app.use(routes);
-
 
 // Catch unhandled requests and forward to error handler
 app.use((_req, _res, next) => {
