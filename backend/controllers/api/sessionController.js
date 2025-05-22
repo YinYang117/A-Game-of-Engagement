@@ -27,7 +27,7 @@ const login = async (req, res, next) => {
         return next(error);
     };
 
-    if (!bcrypt.compareSync(password, user.hashedPassword.toString())) {
+    if (!bcrypt.compareSync(password, user.passwordHash.toString())) {
         let error = new Error('Log In Failed');
         error.title = 'Login failed';
         error.message = 'Invalid Password';
