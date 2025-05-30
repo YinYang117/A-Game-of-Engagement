@@ -1,0 +1,39 @@
+/* Theme system */
+
+:root {
+  --color-bg: #242424;
+  --color-text: rgba(255, 255, 255, 0.87);
+  --color-primary: #00bcd4;
+  --color-accent: #ff4081;
+  --color-muted: #999;
+
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Light theme */
+.theme-light {
+  --color-bg: #f5f5f5;
+  --color-text: #111;
+  --color-primary: #0077cc;
+  --color-accent: #ff4081;
+  --color-muted: #666;
+}
+
+/* Warm theme (reds, oranges, yellows) */
+.theme-warm {
+  --color-bg: #3b1f1f;
+  --color-text: #ffe4b5;
+  --color-primary: #e25822;
+  --color-accent: #ffc107;
+  --color-muted: #a65f2a;
+}
+
+/* Cool theme (blues, purples, greens) */
+.theme-cool {
+  --color-bg: #1e1f3b;
+  --color-text: #c3f0ff;
+  --color-primary: #6a5acd;
+  --color-accent: #00bcd4;
+  --color-muted: #5e9ca0;
+}
