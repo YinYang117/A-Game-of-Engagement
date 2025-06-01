@@ -29,3 +29,4 @@ npx dotenv sequelize db:seed
 npx dotenv sequelize db:seed:all
 npx dotenv sequelize db:seed:undo
 npx dotenv sequelize db:seed:undo:all
+
