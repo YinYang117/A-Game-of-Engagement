@@ -1,3 +1,3 @@
+npm install react-router-dom
 npm install framer-motion react-intersection-observer
 
-<!-- React was also installed with npm -->
