@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-html, body {
+html, body, #root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -20,9 +20,6 @@ html, body {
 }
 
 body {
-  display: flex;
-  place-items: center;
-  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
 }
