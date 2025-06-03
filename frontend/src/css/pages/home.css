@@ -17,3 +17,52 @@ p {
     line-height: var(--brand-text-lineHeight-300);
     letter-spacing: var(--brand-text-letterSpacing-300);
 }
+
+/* 
+    --- Font Themes ---
+*/
+.font-title {
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-line-title);
+}
+
+.font-subtitle {
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-line-subtitle);
+  color: var(--color-muted);
+}
+
+.font-body {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--font-line-body);
+}
+
+.font-muted {
+  font-size: var(--font-size-muted);
+  color: var(--color-muted);
+  font-weight: var(--font-weight-normal);
+}
+
+.font-card {
+  font-size: var(--font-size-card);
+  color: var(--color-muted);
+  font-weight: var(--font-weight-light);
+}
+
+.font-nav {
+  font-size: var(--font-size-nav);
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-button {
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight-medium);
+}
+
+.font-small {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-light);
+}

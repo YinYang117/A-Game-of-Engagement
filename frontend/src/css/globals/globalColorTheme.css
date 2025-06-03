@@ -1,4 +1,9 @@
-/* Theme system */
+/* 
+  Theme system
+
+  If adding a new category of color here, add to all themes
+  Otherwise, add new categories in lower css files
+ */
 
 .theme-dark {
   --color-bg: #010409;
@@ -6,9 +11,6 @@
   --color-primary: #00bcd4;
   --color-accent: #ff4081;
   --color-muted: #999;
-
-  background-color: var(--color-bg);
-  color: var(--color-text);
 }
 
 /* Light theme */
