@@ -1,4 +1,4 @@
-
+import '../../css/pages/home.css';
 
 const Home = () => {
     return (
@@ -19,8 +19,7 @@ const Home = () => {
                 <>
                     <p>Massage taught me to see where something’s off—even if it’s not where the pain is. It was my goal to help people get as much long lasting change as possible. That lead me to working through the body as a whole. To address the integrity of the whole.</p>
                     <p>Debugging code is much the same. </p>
-                    <p>When you understand the whole system you know that you don't need patch jobs. You need integrity in the system. All parts function as one (or all parts as a whole, functioning as a whole).
-                    </p>
+                    <p>When you understand the whole system you know that you don't need patch jobs. You need integrity in the system. All parts function as one (or all parts as a whole, functioning as a whole).</p>
                 </>
             </section>
 
@@ -31,9 +30,7 @@ const Home = () => {
                     <p>While learning, explaining tough ideas in simple ways became one of my favourite things.</p>
                     <p>Pair programming became one of my favourite experiences.</p>
                     <p>You don’t just solve bugs together—you learn to speak clearly, listen carefully, and build shared understanding.</p>
-                    <p>It showed me something important:
-                        Helping isn’t just knowledge or giving answers.
-                    </p>
+                    <p>It showed me something important: Helping isn’t just knowledge or giving answers.</p>
                     <p>It’s creating space where others can struggle and thrive.</p>
                 </>
             </section>
@@ -41,7 +38,7 @@ const Home = () => {
             <section className="untangling-complexity">
                 <h2>Untangling Complexity</h2>
                 <>
-                    <p>Whether it’s a frozen shoulder or a messy codebase—  </p>
+                    <p>Whether it’s a frozen shoulder or a messy codebase—</p>
                     <p>I love that moment when things **click**.</p>
                     <p>When you find a thread, follow it, untangle the knots…  </p>
                     <p>And suddenly the whole thing makes sense.</p>
@@ -52,8 +49,7 @@ const Home = () => {
             <section className="design-for-humans">
                 <h2>Design for Humans</h2>
                 <>
-                    <p>I build with The users and The team in mind.
-</p>
+                    <p>I build with The users and The team in mind.</p>
                     <p>If something’s hard to read, I clean it up.  </p>
                     <p>If it’s confusing to use, I redesign it.  </p>
                     <p>If it works but feels clunky, I bring quality of life.</p>

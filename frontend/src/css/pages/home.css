@@ -1,0 +1,12 @@
+.home {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    text-align: center;
+}
