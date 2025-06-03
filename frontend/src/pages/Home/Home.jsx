@@ -22,7 +22,7 @@ const Home = () => {
     return (
         <main className="home">
             <Section className="intro">
-                <h1>I Like Helping People</h1>
+                <h1 className="">I Like Helping People</h1>
                 <>
                     <p>That’s what I've always been about.</p>
                     <p>I started as a healer, helping people through massage to physically heal, restoring motion, and reducing pain, giving them a chance to feel like themselves again.</p>
@@ -96,5 +96,9 @@ const Home = () => {
         </main>
     );
 }
+
+
+// Apply Css
+
 
 export default Home;
