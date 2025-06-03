@@ -8,10 +8,14 @@
   padding: 0;
 }
 
-html, body, #root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+html,
+body,
+#root {
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   line-height: 1.5;
-  font-weight: 400;
+  font-size: 14px;
+  /* font-weight: 400; */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

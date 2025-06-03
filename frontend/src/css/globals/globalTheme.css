@@ -1,8 +1,8 @@
 /* Theme system */
 
 .theme-dark {
-  --color-bg: #242424;
-  --color-text: rgba(255, 255, 255, 0.87);
+  --color-bg: #010409;
+  --color-text: #cee5f5;
   --color-primary: #00bcd4;
   --color-accent: #ff4081;
   --color-muted: #999;

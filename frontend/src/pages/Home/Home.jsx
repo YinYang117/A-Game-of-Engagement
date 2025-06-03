@@ -1,9 +1,6 @@
 import '../../css/pages/home.css';
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-// When user signin is used, pull from user data
-// Until then, default dark
-let colorTheme = "theme-dark"
 
 
 const Section = ({ children, className }) => {
@@ -14,7 +11,7 @@ const Section = ({ children, className }) => {
             className={className}
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 1.6, ease: "easeOut" }}
         >
             {children}
         </motion.section>
@@ -24,7 +21,7 @@ const Section = ({ children, className }) => {
 const Home = () => {
     return (
         <main className="home">
-            <section className="intro">
+            <Section className="intro">
                 <h1>I Like Helping People</h1>
                 <>
                     <p>That’s what I've always been about.</p>
@@ -33,18 +30,18 @@ const Home = () => {
                     <p>Now I help people by building visionary software—sites and systems that are easy to use, beautiful to look at, and designed with people in mind.</p>
                     <p>I’ve done a lot of different things. But at the heart of it all is one idea: Helping people feels good.</p>
                 </>
-            </section>
+            </Section>
 
-            <section className="systems-mindset">
+            <Section className="systems-mindset">
                 <h2>A Systems Mindset</h2>
                 <>
                     <p>Massage taught me to see where something’s off—even if it’s not where the pain is. It was my goal to help people get as much long lasting change as possible. That lead me to working through the body as a whole. To address the integrity of the whole.</p>
                     <p>Debugging code is much the same. </p>
                     <p>When you understand the whole system you know that you don't need patch jobs. You need integrity in the system. All parts function as one (or all parts as a whole, functioning as a whole).</p>
                 </>
-            </section>
+            </Section>
 
-            <section className="teaching-and-leading">
+            <Section className="teaching-and-leading">
                 <h2>Teaching and Leading</h2>
                 <>
                     <p>I didn’t just want to be good at code—I wanted to experience and share that growth with others. </p>
@@ -54,9 +51,9 @@ const Home = () => {
                     <p>It showed me something important: Helping isn’t just knowledge or giving answers.</p>
                     <p>It’s creating space where others can struggle and thrive.</p>
                 </>
-            </section>
+            </Section>
 
-            <section className="untangling-complexity">
+            <Section className="untangling-complexity">
                 <h2>Untangling Complexity</h2>
                 <>
                     <p>Whether it’s a frozen shoulder or a messy codebase—</p>
@@ -65,9 +62,9 @@ const Home = () => {
                     <p>And suddenly the whole thing makes sense.</p>
                     <p>That’s a great moment I work towards.</p>
                 </>
-            </section>
+            </Section>
 
-            <section className="design-for-humans">
+            <Section className="design-for-humans">
                 <h2>Design for Humans</h2>
                 <>
                     <p>I build with The users and The team in mind.</p>
@@ -77,9 +74,9 @@ const Home = () => {
                     <p>Clean code, clear flows, good design—  </p>
                     <p>These aren’t extras. They’re the way I show respect to the people who will touch this after me.</p>
                 </>
-            </section>
+            </Section>
 
-            <section className="living-practice">
+            <Section className="living-practice">
                 <h2>A Living Practice</h2>
                 <>
                     <p>You can see all of this in my GitHub.  </p>
@@ -88,14 +85,14 @@ const Home = () => {
                     <p>Built by hand, made with care.  </p>
                     <p>It doesn’t just show what I’ve done—it shows how I **do**.</p>
                 </>
-            </section>
+            </Section>
 
-            <section className="closing">
+            <Section className="closing">
                 <blockquote>
                     “Helping others is what guides me—Whether I’m healing, teaching, or building.”
                 </blockquote>
                 <p>Ryan Schneider | Slcryan2010@gmail.com | Let’s work together</p>
-            </section>
+            </Section>
         </main>
     );
 }
