@@ -1,4 +1,25 @@
 import '../../css/pages/home.css';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+// When user signin is used, pull from user data
+// Until then, default dark
+let colorTheme = "theme-dark"
+
+
+const Section = ({ children, className }) => {
+    const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
+    return (
+        <motion.section
+            ref={ref}
+            className={className}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+            {children}
+        </motion.section>
+    );
+};
 
 const Home = () => {
     return (

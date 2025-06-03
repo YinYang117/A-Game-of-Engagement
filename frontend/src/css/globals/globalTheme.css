@@ -1,6 +1,6 @@
 /* Theme system */
 
-:root {
+.theme-dark {
   --color-bg: #242424;
   --color-text: rgba(255, 255, 255, 0.87);
   --color-primary: #00bcd4;
