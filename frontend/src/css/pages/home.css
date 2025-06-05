@@ -1,16 +1,35 @@
+/* 
+  Notes (may move to more relavent area later
+  
+clamp(minimum, preferred, maximum) ->
+  Preferred: Usually a relative value (like vw), which scales with viewport size.
+  Keeps things from getting too small or large but still scaling with viewports
+*/
+
 .home {
-    display: flex;
-    place-items: center;
-    flex-direction: column;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
 }
 
-section {
-    display: flex;
-    place-items: center;
-    flex-direction: column;
-    text-align: center;
+.home section {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-block: clamp(3rem, 8vw, 8rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
+.home section.intro {
+  margin-top: 4rem;
+}
+
+.home section.closing {
+  margin: 0, 0, 0, 0;
+  margin-block: 0;
+}
 
 /* 
     --- Font Themes ---
